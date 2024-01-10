@@ -1,38 +1,35 @@
 <template>
   <div class="landing">
-    <h1 class="text-1">
-          Greetings! Welcome to
-          <b class="storeName">Organic Cosmetic Wholesaler.</b> I'm Vuyiseka,
-          and I'm delighted to have you here. Explore our diverse range of
-          organic products designed to cater to your skincare needs.
-        </h1>
+    <h1 class="text-1 display-3">
+      Hi!,
+      I am Vuyiseka Njovane an aspiring full-stack developer.
+    </h1>
   </div>
 </template>
 
 <script>
-  export default {
-    
-  }
+export default {
+  name: 'homePage',
+}
 </script>
 
 <style scoped>
 .landing {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('../assets/css/background\ image_cleanup.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .text-1 {
-    position: absolute;
-    top: 50%; 
-    left: 80%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
-    font-weight: 80;
-    text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("C:/Users/Student/Downloads/background.jpg") center/cover no-repeat;
 }
+.text-1 {
+    position: absolute;
+    top: 60%;
+    margin: 20px;
+    padding: 40px;
+    right: 60%;
+    transform: translate(-7%, -50%);
+    color: black;
+    font-weight: 120;
+    text-align: center;
+  }
+
 </style>

@@ -1,7 +1,5 @@
 <template>
-    <div class="about">
-      <h1>This is an about page</h1>
-      
+    <div class="headings">
+      <h1 class="display-3">Testimonials</h1>
     </div>
   </template>
-  
