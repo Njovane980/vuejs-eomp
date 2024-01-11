@@ -20,6 +20,7 @@ img[alt='logo']{
   
   nav {
     padding: 30px;
+    background-color: #e6d2d5;
   }
   
   nav a {
@@ -30,3 +31,8 @@ img[alt='logo']{
   nav a.router-link-exact-active {
     color: #b45da4;
   } 
+  /* projects cards */
+#rows{
+    padding-left: 275px;
+    margin-top: 40px;
+}
