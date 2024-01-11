@@ -20,16 +20,25 @@ export default {
   height: 100vh;
   background: url("C:/Users/Student/Downloads/background.jpg") center/cover no-repeat;
 }
-.text-1 {
-    position: absolute;
-    top: 60%;
-    margin: 20px;
-    padding: 40px;
-    right: 60%;
-    transform: translate(-7%, -50%);
-    color: black;
-    font-weight: 120;
-    text-align: center;
-  }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.text-1 {
+  position: absolute;
+  top: 60%;
+  margin: 20px;
+  padding: 40px;
+  right: 60%;
+  transform: translate(-7%, -50%);
+  color: black;
+  font-weight: 120;
+  text-align: center;
+}
 </style>

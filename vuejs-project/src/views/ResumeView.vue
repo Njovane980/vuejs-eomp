@@ -55,6 +55,12 @@
                     </div>
                 </div>
             </div>
+<div class="headings">
+    <h1 class="display-3">Skills</h1>
+</div>
+<div>
+    
+</div>
   </template>
 <style scoped>
 .main-timeline {
