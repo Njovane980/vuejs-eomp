@@ -28,7 +28,7 @@
               placeholder="enter surname here"
             />
           </div>
-          <div class="mb-3">
+          <div class="mb-3 w-25">
             <label for="#Email" class="form-label">Email address</label>
             <input
               type="Email"
@@ -41,7 +41,7 @@
               "
             />
           </div>
-          <div class="mb-3">
+          <div class="mb-3 w-25">
             <label for="#Message" class="form-label">Message</label>
             <textarea
               class="form-control"
