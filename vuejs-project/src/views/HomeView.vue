@@ -40,6 +40,6 @@ export default {
   color: black;
   font-weight: 120;
   text-align: center;
+  opacity: 200;
 }
-
 </style>

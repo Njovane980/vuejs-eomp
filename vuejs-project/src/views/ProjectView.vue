@@ -67,5 +67,33 @@
     padding-left: 20px;
     margin-top: 40px;
 } 
+@media (max-width: 300px) {
+  #rows {
+    padding-left: 10px;
+  }
+  .card {
+    width: 100%; /* Adjust the width as needed */
+  }
+}
+
+/* Media Query for screens with a maximum width of 576px (typical mobile devices) */
+@media (max-width: 576px) {
+  #rows {
+    padding-left: 15px;
+  }
+  .card {
+    width: 100%; /* Adjust the width as needed */
+  }
+}
+
+/* Media Query for screens with a maximum width of 720px */
+@media (max-width: 720px) {
+  #rows {
+    padding-left: 20px;
+  }
+  .card {
+    width: 100%; /* Adjust the width as needed */
+  }
+}
 </style>
   
