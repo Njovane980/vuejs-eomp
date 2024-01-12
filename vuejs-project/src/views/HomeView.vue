@@ -41,4 +41,5 @@ export default {
   font-weight: 120;
   text-align: center;
 }
+
 </style>

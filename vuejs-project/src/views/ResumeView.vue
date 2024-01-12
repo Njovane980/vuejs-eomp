@@ -1,6 +1,7 @@
 <template>
     <div class="headings">
       <h1 class="display-3">Resume</h1>
+      <h4 class="display-5">Education</h4>
     </div>
     <div class="main-timeline">
             <div class="timeline">
@@ -55,13 +56,63 @@
                     </div>
                 </div>
             </div>
-<div class="headings">
-    <h1 class="display-3">Skills</h1>
-</div>
-<div>
-    
-</div>
-  </template>
+            <div class="headings">
+                <h4 class="display-5">Skills</h4>
+                <div class="row grid gap-3" id="row">
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                  <!-- Front of the card -->
+                  <div class="flip-card-front">
+                    <img src="../assets/html logo.png" alt="HTML Logo" class="logo">
+                    <h3>HTML</h3>
+                  </div>
+                  <!-- Back of the card -->
+                  <div class="flip-card-back">
+                    <p>Proficient in HTML5 for building structured web pages.</p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="../assets/css.png" alt="CSS Logo" class="logo">
+                    <h3>CSS</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Skilled in CSS for styling and layout of web pages.</p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="../assets/Javascript.png" alt="JavaScript Logo" class="logo">
+                    <h3>JavaScript</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Experience with JavaScript for interactive web development.</p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="../assets/bootstrap logo.png" alt="Bootstrap Logo" class="logo">
+                    <h3>Bootstrap</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Proficient in Bootstrap for responsive and mobile-first design.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </template>
 <style scoped>
 .main-timeline {
      position: relative
@@ -263,4 +314,5 @@
          padding: 10px 30px 10px 0
      }
  }
+ 
 </style>
