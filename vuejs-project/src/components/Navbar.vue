@@ -3,14 +3,14 @@
   <div class="container-fluid">
     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
     <router-link to="/">
-        <img class="img-fluid" src="../assets/VN (2).png" alt="logo">
+        <img class="img-fluid" src="../assets/VN (2).png" height="50px" alt="logo">
     </router-link>
     <!-- replace the a tag with the router link for the home page -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
         <li class="nav-item">
             <router-link to="/" class="nav-link active text-white ">
                 Home
@@ -58,4 +58,5 @@
 .nav-link {
     font-size: x-large;
 }
+
 </style>

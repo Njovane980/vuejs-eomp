@@ -1,45 +1,76 @@
 <template>
-  <div class="landing">
-    <h1 class="text-1 display-3">
-      Hi!,
-      I am Vuyiseka Njovane an aspiring full-stack developer.
-    </h1>
+  <div class="home display-2">
+    <p> Hi, I'm Vuyiseka Njovane</p>
+    <h1 class="container display-1" id="body"></h1>
+    <div class="links">
+      <a href="https://www.linkedin.com/mynetwork/" target="_blank">
+        <img src="https://i.postimg.cc/Gm83MFBJ/linked.jpg" alt="LinkedIn" class="social-icon">
+      </a>
+      <a href="https://github.com/UnathiGcetywa80/Unathi-s-Portfolio" target="_blank">
+        <img src="https://i.postimg.cc/x1cGt4yx/github.jpg" alt="GitHub" class="social-icon">
+      </a>
+    </div>
   </div>
 </template>
-
 <script>
 export default {
-  name: 'homePage',
-}
+  mounted() {
+    const textElement = document.getElementById('body');
+    const originalText = "An aspiring Software Engineer";
+    let currentIndex = 0;
+    function typeText() {
+      if (currentIndex < originalText.length) {
+        textElement.textContent += originalText.charAt(currentIndex);
+        currentIndex++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }
+    const typingInterval = setInterval(typeText, 100);
+  },
+};
 </script>
-
 <style scoped>
-.landing {
-  position: relative;
-  width: 100%;
+body {
+  width: 100vw;
   height: 100vh;
-  background: url("C:/Users/Student/Downloads/background.jpg") center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-emphasis-color: pink;
 }
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.5);
+.container {
+  font-size: 2em;
+  font-weight: bold;
 }
-
-.text-1 {
-  position: absolute;
-  top: 60%;
-  margin: 20px;
-  padding: 40px;
-  right: 60%;
-  transform: translate(-7%, -50%);
-  color: black;
-  font-weight: 120;
-  text-align: center;
-  opacity: 200;
+.profile-image {
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.links {
+  margin-top: 20px;
+}
+.links a {
+  margin-right: 10px;
+}
+.social-icon {
+  width: 30px; 
+  height: 30px; 
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  display: none;
 }
 </style>
