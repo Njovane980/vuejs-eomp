@@ -1,98 +1,98 @@
 <template>
-    <div class="headings">
-      <h2 class="display-3">Projects</h2>
+  <div class="container" id="Bproj">
+    <h2 class="display-2" id="heading">Projects</h2>
+    <div class="row grid gap-3" id="rows">
+      <div v-for="(project, index) in projects" :key="index" class="p-2 g-col-6 card w-25" :class="{ 'slide-from-left': index % 2 === 0, 'slide-from-right': index % 2 !== 0 }">
+        <div class="card-body">
+          <img :src="project.image" class="card-img-top" :alt="project.title">
+          <h5 class="card-title text-dark">{{ project.title }}</h5>
+          <a :href="project.github" class="btn btn-outline-dark" target="_blank">GitHub</a>
+          <a :href="project.netlify" class="btn btn-outline-dark" target="_blank">Netlify</a>
+        </div>
+      </div>
     </div>
-    <div class="row grid gap-3 mx-auto" id="rows">
-                    
-                <div class="p-2 g-col-6 card w-25" style="width: 18rem;">
-                    <img src="../assets/calculator logo.jpg" class="card-img-top" alt="calculator-logo">
-                    <div class="card-body">
-                      <h5 class="card-title">Calculator</h5>
-                      <a href="https://github.com/Njovane980/CalculatorTask.git" class="btn btn-primary">Git Hub</a>
-                      <a href="#" class="btn btn-primary">Netlify</a>
-                    </div>
-                  </div>
-                <div class="p-2 g-col-6 card w-25" style="width: 18rem;">
-                    <img src="../assets/mobicare logo.png" class="card-img-top" alt="mobicare-logo">
-                    <div class="card-body">
-                      <h5 class="card-title">Mobicare</h5>
-                      <a href="https://github.com/Njovane980/MobiCare.git" class="btn btn-primary">Git Hub</a>
-                      <a href="#" class="btn btn-primary">Netlify</a>
-                    </div>
-                  </div>
-                <div class="p-2 g-col-6 card w-25" style="width: 18rem;">
-                    <img src="../assets/weave.jpg" class="card-img-top" alt="weave">
-                    <div class="card-body">
-                      <h5 class="card-title">Weave Online Store</h5>
-                      <a href="" class="btn btn-primary">Git Hub</a>
-                      <a href="#" class="btn btn-primary">Netlify</a>
-                    </div>
-                  </div>
-                <div class="p-2 g-col-6 card w-25" style="width: 18rem;">
-                    <img src="../assets/keyboard.jpg" class="card-img-top" alt="keyboard">
-                    <div class="card-body">
-                      <h5 class="card-title">Keyboard</h5>
-                      <a href="https://github.com/Njovane980/KyboardTask.git" class="btn btn-primary">Git Hub</a>
-                      <a href="#" class="btn btn-primary">Netlify</a>
-                    </div>
-                  </div>
-                <div class="p-2 g-col-6 card w-25" style="width: 18rem;">
-                    <img src="../assets/to do list.jpg" class="card-img-top" alt="ToDoList">
-                    <div class="card-body">
-                      <h5 class="card-title">To Do List</h5>
-                      <a href="https://github.com/Njovane980/ToDoList.git" class="btn btn-primary">Git Hub</a>
-                      <a href="#" class="btn btn-primary">Netlify</a>
-                    </div>
-                  </div>
-                <div class="p-2 g-col-6 card w-25 " style="width: 18rem;">
-                    <img src="../assets/BMI.jpg" class="card-img-top" alt="BMIConverter">
-                    <div class="card-body">
-                      <h5 class="card-title">BMI Converter</h5>
-                      <a href="https://github.com/Njovane980/BMICalculator.git" class="btn btn-primary">Git Hub</a>
-                      <a href="#" class="btn btn-primary">Netlify</a>
-                    </div>
-                  </div>
-                </div>
-
-  </template>
-  
-  <script>
-    export default {
-        
-    }
-  </script>
-  
+  </div>
+</template>
+<script>
+export default {
+  data() {
+    return {
+      projects: [
+        {
+          title: "The Calculator",
+          image: "",
+          github: "https://github.com/niyaazdaniels/NODE_EOMP.git",
+          netlify: "https://nodeeomp-7c094.web.app"
+        },
+        {
+          title: "Capstone Project",
+          image: "https://i.ibb.co/Jr5jJgP/download-12.jpg",
+          github: "https://github.com/thimnaalam/Khanyile.js.git",
+          netlify: "https://khanyiles.netlify.app/"
+        },
+        {
+          title: "Node.js Project",
+          image: "https://i.ibb.co/TMMjCmc/1000-F-474835440-XYky-AZj-LECO54-WGb-BDAu3-Ar9-Bm23kh9-Q.jpg",
+          github: "https://github.com/thimnaalam/BootstrapProject.git",
+          netlify: "https://bootstrapthimna.netlify.app/"
+        },
+        {
+          title: "Calculator",
+          image: "https://i.ibb.co/nB4mJP0/download-4.png",
+          github: "https://github.com/thimnaalam/projectCalculator.git"
+        },
+        {
+          title: "Online weave store website",
+          image: "https://i.ibb.co/GT5XJ48/5fd7cf7f78a5740019a15561.webp"
+        },
+        {
+          title: "The BMI calculator",
+          image: "",
+          github: "https://github.com/thimnaalam/MobiCare_week1.git"
+        }
+      ]
+    };
+  }
+};
+</script>
 <style scoped>
-#rows{
-    padding-left: 20px;
-    margin-top: 40px;
-} 
-@media (max-width: 300px) {
-  #rows {
-    padding-left: 10px;
+.card {
+  box-shadow: 10px 7px 10px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  width: 300px;
+}
+img{
+  height: 200px;
+}
+.btn {
+  background-color: gray;
+  border-color: white;
+  box-shadow: 10px 7px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  font-family: "Arvo", serif;
+  margin-top: 5%;
+}
+.slide-from-left {
+  animation: slideFromLeft 1s ease-in-out;
+}
+.slide-from-right {
+  animation: slideFromRight 1s ease-in-out;
+}
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
   }
-  .card {
-    width: 100%; /* Adjust the width as needed */
+  100% {
+    transform: translateX(0);
   }
 }
-
-/* Media Query for screens with a maximum width of 576px (typical mobile devices) */
-@media (max-width: 576px) {
-  #rows {
-    padding-left: 15px;
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
   }
-  .card {
-    width: 100%; /* Adjust the width as needed */
-  }
-}
-
-/* Media Query for screens with a maximum width of 720px */
-@media (max-width: 720px) {
-  #rows {
-    padding-left: 20px;
-  }
-  .card {
-    width: 100%; /* Adjust the width as needed */
+  100% {
+    transform: translateX(0);
   }
 }
 </style>

@@ -1,45 +1,77 @@
 <template>
-  <div class="landing">
-    <h1 class="text-1 display-3">
-      Hi!,
-      I am Vuyiseka Njovane an aspiring full-stack developer.
-    </h1>
+  <div class="content">
+    <div class="container">
+      <div class="info">
+        <h1 class="fullname">Vuyiseka Njovane</h1>
+        <p>An Aspiring Full-Stack Developer</p>
+        <a href="https://drive.google.com/file/d/1yYYJd4BbxeFTwAFXQOsSuOghJngnDdNm/view?usp=sharing" class="resume-button">Download my resume</a>
+      </div>
+      <div class="image">
+        <img src="https://i.postimg.cc/SK9Jvgr1/312cb784-9dcf-4e57-802c-97e63a8e3e4e-1.jpg" alt="Profile Picture">
+      </div>
+    </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'homePage',
-}
-</script>
-
 <style scoped>
-.landing {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: url("C:/Users/Student/Downloads/background.jpg") center/cover no-repeat;
+.content {
+  background-image: url('https://i.postimg.cc/2S4zLGQn/circles2.webp');
+  background-size: cover;
+  background-position: center;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.5);
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjust the gap as needed */
+  min-height: calc(100vh - 80px);
 }
 
-.text-1 {
-  position: absolute;
-  top: 60%;
-  margin: 20px;
-  padding: 40px;
-  right: 60%;
-  transform: translate(-7%, -50%);
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 0;
+    min-height: calc(100vh - 101px);
+  }
+}
+
+.image {
+  flex: 1;
+}
+
+.fullname {
+  font-size: 3rem; 
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 80%; 
+}
+
+.info {
+  flex: 1;
+  text-align: center; 
+}
+
+.info h1 {
   color: black;
-  font-weight: 120;
-  text-align: center;
-  opacity: 200;
+  font-size: 60px;
+}
+
+.info p {
+  margin: 0;
+  line-height: 2.6;
+  font-size: 28px;
+  color: #5d5d5d;
+}
+
+.resume-button {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px; /* Adjust margin as needed */
 }
 </style>

@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div class="headings">
+          <div class="headings">
                 <h4 class="display-5">Skills</h4>
                 <div class="row grid gap-3" id="row">
                 <div class="flip-card">

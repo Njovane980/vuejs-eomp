@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg ">
   <div class="container-fluid">
-    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    
     <router-link to="/">
         <img class="img-fluid" src="../assets/VN (2).png" alt="logo">
     </router-link>
@@ -24,7 +24,7 @@
         </li>
         <li class="nav-item">
             <router-link to="/resume" class="nav-link text-white ">
-                    Resume
+                    Education
             </router-link>
         </li>
         <li class="nav-item">
@@ -34,7 +34,7 @@
         </li>
         <li class="nav-item">
             <router-link to="/testimonials" class="nav-link text-white">
-                    Testimonials
+                    Peer Reviews
             </router-link>
         </li>
         <li class="nav-item">
