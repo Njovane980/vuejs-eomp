@@ -1,73 +1,54 @@
 <template>
-  <div class="headings">
-    <h2 class="display-3">About</h2>
-    <div class="container">
-      <div class="image-container">
-        
-        <img src="https://i.postimg.cc/jqG54FLm/IMG-5799.jpg" id="abtpic" alt="Your Picture" >
+  <h2 class="display-2" id="heading">About Me</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="about-picture">
+          <img :src="profilePicture" alt="Profile Picture">
+        </div>
       </div>
-      <div class="contents">
-        
-        <p class="para1">
-          I am Vuyiseka Njovane, born on 27 August 1997. Originally from King William's Town, a small historical town in the Eastern Cape.
-          I now currently reside on Tutu Avenue, Makhaza in Khayelitsha.
-          I matriculated with a Bachelor pass from Matsa High School in 2016, pursued higher education
-          from the University of Fort Hare where I graduated in 2023 with a Bachelor of Social Science in Human Settlements.
-          Changed careers and ventured into the tech industry, enrolled at Life Choices Coding Academy where I recently graduated 
-          from a Full-stack development course. In my free time, I read and study.
-        </p>
+      <div class="col-md-6">
+        <div class="about-content">
+          <p>{{ aboutText }}</p>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      profilePicture: 'https://i.postimg.cc/fW7svvyC/skill-blog-img.jpg',
+      aboutText: `I was born on 27 August 1997 in King Williams Town in the Eastern Cape but currently residing in Makhaza, Khayelitsha in Cape Town. I am a dedicated individual who has completed matric in 2016 and completed a Bachelor of Social Sciences Human Settlements (Property and Development). In addition to my academic achievements, I have pursued a comprehensive full-stack development course from Life Choices Coding Academy, and I am currently undertaking studies in Cybersecurity. I am deeply committed to continuous learning and personal development, recognizing them as fundamental pillars of professional growth and excellence. I firmly believe in the empowerment of women and actively engage with campaigns and initiatives dedicated to advancing this noble cause. Currently, I am gaining practical experience and honing my skills as an intern at LC Studio, where I am contributing to various projects and furthering my understanding of the industry. I approach my work with diligence, professionalism, and a steadfast commitment to excellence.<br><br>In my free time, I learn new skills. Carpentry has been my recent focus, and I also enjoy reading books and exercising.`
+    };
+  }
+};
+</script>
+
+
 <style scoped>
-.headings {
-  background-image: url('https://i.postimg.cc/2S4zLGQn/circles2.webp');
-  background-size: cover;
-  background-position: center;
-  height: 700px; /* Adjust height as needed */
-}
-
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(2, 13, 13, 0.156);
-  width: 1000px;
-  margin-top: 5%;
-
+  margin-top: 50px;
+  border: 2px solid #ab9c9c; 
+  border-radius: 10px; 
+  padding: 20px; 
 }
 
-.image-container {
-  flex: 1; /* To occupy 50% of the container */
+.about-picture img {
+  max-width: 100%;
+  border-radius: 5px;
 }
 
-.image-container img {
-  width: 100%;
-  height: auto;
-  max-width: 100%; /* Ensures the image does not exceed its container */
+.about-content h2 {
+  font-size: 40px;
+  margin-bottom: 70px;
 }
 
-.contents {
-  flex: 1; 
-  padding: 100px;
- 
-
-}
-
-.display-3 {
-  margin-top: 0; 
-
-}
-
-.para1 {
-  margin-top: 0; 
-}
-
-#abtpic{
- height: 500px;
- object-fit: contain;
+.about-content p {
+  font-size: 15px;
+  line-height: 1.6;
 }
 </style>
 

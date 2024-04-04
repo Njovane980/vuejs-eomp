@@ -8,8 +8,9 @@
 
     </div>
     <div class="social-icons">
-          <a href="https://i.postimg.cc/DZvrqVQ3/linkedin.png" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
-          <a href="https://i.postimg.cc/RVPvm2Vp/github.png" target="_blank" class="github"><i class="fab fa-github"></i></a>
+          <a href="https://i.postimg.cc/DZvrqVQ3/linkedin.png" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
+          <a href="https://github.com/Njovane980" target="_blank" class="github"><i class="fab fa-github"></i>Github</a>
+          <a href="#" target="_blank" class="phone"><i class="fab fa-phone"></i>+27 671454980</a>
     </div>
 </template>
 
@@ -28,11 +29,12 @@
 <style scoped>
 .social-icons {
   margin-top: 2px;
+  font-size:x-small;
 }
 
 .social-icons a {
   color: black;
-  font-size: 30px;
+  font-size: 15px;
   margin-right: 2%;
 }
 

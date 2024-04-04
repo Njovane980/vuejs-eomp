@@ -3,7 +3,9 @@
     <div class="container">
       <div class="info">
         <h1 class="fullname">Vuyiseka Njovane</h1>
-        <p>An Aspiring Full-Stack Developer</p>
+        <p>Hi, I am a Certified Full-stack developer,<br> profiecient in multiple technologies and have a proven track
+          record of <br>time management and adaptability. <br>Commited to finding constructive solutions to challenges<br> and work well in collaborative teams.
+        </p>
         <a href="https://drive.google.com/file/d/1yYYJd4BbxeFTwAFXQOsSuOghJngnDdNm/view?usp=sharing" class="resume-button">Download my resume</a>
       </div>
       <div class="image">
@@ -58,13 +60,6 @@
   font-size: 60px;
 }
 
-.info p {
-  margin: 0;
-  line-height: 2.6;
-  font-size: 28px;
-  color: #5d5d5d;
-}
-
 .resume-button {
   display: inline-block;
   background-color: black;
@@ -75,3 +70,4 @@
   margin-top: 20px; /* Adjust margin as needed */
 }
 </style>
+

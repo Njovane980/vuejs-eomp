@@ -1,7 +1,7 @@
 <template>
-  <div class="container" id="Bproj">
-    <h2 class="display-2" id="heading">Projects</h2>
-    <div class="row grid gap-3" id="rows">
+  <h2 class="display-2" id="heading">Projects</h2>
+  <div class="container d-flex justify-content-center" id="Projct">
+    <div class="row gap-3" id="rows">
       <div v-for="(project, index) in projects" :key="index" class="p-2 g-col-6 card w-25" :class="{ 'slide-from-left': index % 2 === 0, 'slide-from-right': index % 2 !== 0 }">
         <div class="card-body">
           <img :src="project.image" class="card-img-top" :alt="project.title">
@@ -20,34 +20,35 @@ export default {
       projects: [
         {
           title: "The Calculator",
-          image: "",
-          github: "https://github.com/niyaazdaniels/NODE_EOMP.git",
-          netlify: "https://nodeeomp-7c094.web.app"
+          image: "https://i.postimg.cc/Bvyt9bZQ/calculator.jpg",
+          github: "https://github.com/Njovane980/CalculatorTask.git",
+          netlify: "#"
         },
         {
           title: "Capstone Project",
-          image: "https://i.ibb.co/Jr5jJgP/download-12.jpg",
-          github: "https://github.com/thimnaalam/Khanyile.js.git",
-          netlify: "https://khanyiles.netlify.app/"
+          image: "https://i.postimg.cc/YqnHyVCt/cap.jpg",
+          github: "https://github.com/Njovane980/CaptoneEOMP.git",
+          netlify: ""
         },
         {
           title: "Node.js Project",
-          image: "https://i.ibb.co/TMMjCmc/1000-F-474835440-XYky-AZj-LECO54-WGb-BDAu3-Ar9-Bm23kh9-Q.jpg",
-          github: "https://github.com/thimnaalam/BootstrapProject.git",
-          netlify: "https://bootstrapthimna.netlify.app/"
+          image: "https://i.postimg.cc/dQRddRt2/node.jpg",
+          github: "",
+          netlify: ""
         },
         {
-          title: "Calculator",
-          image: "https://i.ibb.co/nB4mJP0/download-4.png",
-          github: "https://github.com/thimnaalam/projectCalculator.git"
+          title: "JavaScript Project",
+          image: "https://i.postimg.cc/9XP8Mq6S/download.jpg",
+          github: "https://github.com/Njovane980/MyJSEOMP.git"
         },
         {
-          title: "Online weave store website",
-          image: "https://i.ibb.co/GT5XJ48/5fd7cf7f78a5740019a15561.webp"
+          title: "Online weave store",
+          image: "https://i.postimg.cc/RhrZbYSP/hair.jpg",
+          github: ""
         },
         {
           title: "The BMI calculator",
-          image: "",
+          image: "https://i.postimg.cc/267KPbmP/th.jpg",
           github: "https://github.com/thimnaalam/MobiCare_week1.git"
         }
       ]
@@ -55,11 +56,16 @@ export default {
   }
 };
 </script>
+
 <style scoped>
+
 .card {
   box-shadow: 10px 7px 10px rgba(0, 0, 0, 0.1);
   height: 300px;
   width: 300px;
+  margin-right: 0px;
+  
+  
 }
 img{
   height: 200px;
@@ -72,6 +78,7 @@ img{
 h2 {
   font-family: "Arvo", serif;
   margin-top: 5%;
+  padding-left: 20px;
 }
 .slide-from-left {
   animation: slideFromLeft 1s ease-in-out;
@@ -93,6 +100,14 @@ h2 {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+
+@media (max-width: 300px) {
+  .card {
+    width: 100%; 
+    margin-right: 0;
   }
 }
 </style>
