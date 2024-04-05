@@ -25,42 +25,57 @@
           </div>
         </div>
       </div>
+     
+      <h2 class="display-2" id="heading">Skills</h2>
+      <div class="section">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Soft Skills</h3>
+              <ul>
+                Effective communication, Problem-solving, Teamwork, Analytical thinking and Time management.
+                
+                
+              </ul>
+              <h3>Technical Skills</h3>
+              <ul>
+                HTML, CSS, Bootstrap, JavaScript, 
+                MySQL, Vue.js and Node.js
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </template>
   
   <script>
   export default {
-      data() {
-          return {
-              education: [
-                  {
-                      degree: "Cybersecurity Basics Certificate",
-                      institution: "Life Choices Studio",
-                      year: "2024 - Present"
-                    },
-                    {
-                        degree: "Full-Stack Development Certificate",
-                        institution: "Life Choices Coding Academy",
-                        year: "2023 - 2024"
-                    },
-                    {
-                        degree: "Bachelor of Social Sciences in Human Settlements",
-                        institution: "University of Fort Hare",
-                year: "2019 - 2023"
-            },
-            // Add more education entries as needed
-            {
-              degree: "National Senior Certificate",
-              institution: "Matsa High School",
-              year: "2016"
-            },
+    data() {
+      return {
+        education: [
+          {
+            degree: "Full-Stack Development Certificate",
+            institution: "Life Choices Coding Academy",
+            year: "2023 - 2024"
+          },
+          {
+            degree: "Bachelor of Social Sciences in Human Settlements",
+            institution: "University of Fort Hare",
+            year: "2019 - 2023"
+          },
+          {
+            degree: "National Senior Certificate",
+            institution: "Matsa High School",
+            year: "2016"
+          },
         ],
         experience: [
           {
             title: "Software Developer Intern",
             company: "LC Studio",
             duration: "2024 - Present",
-            description: "Contributing to various projects, gaining practical experience in web development, collaborated with team members."
+            description: "Currently gaining practical experience in Cybersecurity"
           },
           {
             title: "Assistant Project Coordinator",
@@ -68,7 +83,6 @@
             duration: "2022 - 2023",
             description: "Assisting in the development of project plans, timelines, and schedules. Coordinating meetings, preparing agendas, and documenting meeting minutes."
           },
-          
         ]
       };
     }
@@ -76,7 +90,6 @@
   </script>
   
   <style scoped>
-
   .container {
     max-width: 800px;
     margin: 0 auto;

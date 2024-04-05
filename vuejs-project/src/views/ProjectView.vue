@@ -22,34 +22,37 @@ export default {
           title: "The Calculator",
           image: "https://i.postimg.cc/Bvyt9bZQ/calculator.jpg",
           github: "https://github.com/Njovane980/CalculatorTask.git",
-          netlify: "#"
+          netlify: "https://vuyisekacalculator.netlify.app"
         },
         {
           title: "Capstone Project",
           image: "https://i.postimg.cc/YqnHyVCt/cap.jpg",
           github: "https://github.com/Njovane980/CaptoneEOMP.git",
-          netlify: ""
+          netlify: "https://capstonevuvu.web.app"
         },
         {
           title: "Node.js Project",
           image: "https://i.postimg.cc/dQRddRt2/node.jpg",
-          github: "",
-          netlify: ""
+          github: "https://github.com/Maza455/LCA_EndModuleNodeProject",
+          netlify: "https://vuejsproject-949a5.web.app/"
         },
         {
           title: "JavaScript Project",
           image: "https://i.postimg.cc/9XP8Mq6S/download.jpg",
-          github: "https://github.com/Njovane980/MyJSEOMP.git"
+          github: "https://github.com/Njovane980/MyJSEOMP.git",
+          netlify: "https://njovane-jsproject.netlify.app"
         },
         {
-          title: "Online weave store",
-          image: "https://i.postimg.cc/RhrZbYSP/hair.jpg",
-          github: ""
+          title: "The to-do list",
+          image: "https://i.postimg.cc/3N4kJSCp/to-do-list.jpg",
+          github: "https://github.com/Njovane980/ToDoList.git",
+          netlify: "https://to-do-list-vuyiseka.netlify.app"
         },
         {
           title: "The BMI calculator",
           image: "https://i.postimg.cc/267KPbmP/th.jpg",
-          github: "https://github.com/thimnaalam/MobiCare_week1.git"
+          github: "https://github.com/Njovane980/BMICalculator.git",
+          netlify: "https://vuyisekabmicalculator.netlify.app/"
         }
       ]
     };

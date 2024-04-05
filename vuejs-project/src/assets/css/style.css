@@ -127,6 +127,15 @@ img[alt='logo']{
     height: auto;
     margin-bottom: 10px;
   }
+  .footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F8F9FA;
+    padding: 10px;
+    text-align: center;
+  }
   
   .flip-card-back p {
     text-align: center;
