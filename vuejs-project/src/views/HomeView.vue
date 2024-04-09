@@ -6,7 +6,7 @@
         <p>Hi, I am a Certified Full-stack developer,<br> profiecient in multiple technologies and have a proven track
           record of <br>time management and adaptability. <br>Commited to finding constructive solutions to challenges<br> and work well in collaborative teams.
         </p>
-        <a href="https://drive.google.com/file/d/1yYYJd4BbxeFTwAFXQOsSuOghJngnDdNm/view?usp=sharing" class="resume-button">Download my resume</a>
+        <a href="https://drive.google.com/file/d/1yYYJd4BbxeFTwAFXQOsSuOghJngnDdNm/view?usp=sharing" class="resume-button" loading="lazy">Download my resume</a>
       </div>
       <div class="image">
         <img src="https://i.postimg.cc/SK9Jvgr1/312cb784-9dcf-4e57-802c-97e63a8e3e4e-1.jpg" alt="Profile Picture">
